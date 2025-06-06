@@ -1,0 +1,12 @@
+procedure selectionSort(array)
+    n ← length(array)
+
+    for i ← 0 to n - 2 do
+        minIndex ← i
+
+        for j ← i + 1 to n - 1 do
+            if array[j] < array[minIndex] then
+                minIndex ← j
+
+        if minIndex ≠ i then
+            swap array[i] and array[minIndex]
